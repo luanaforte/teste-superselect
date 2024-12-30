@@ -1,0 +1,180 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #333;
+    font-family: "Inter-Regular", sans-serif;
+}
+.filtro {
+    height: 300px;
+    position: relative;  
+    opacity: 0;
+    transform: translateY(-100%);
+    animation: 0.5s ease-out forwards; 
+}
+.rectangle-27 {
+    background: #d9d9d9;
+    border-radius: 20px;
+    width: 95vw;
+    height: 300px;
+    position: absolute;
+    justify-content: center;
+    left: 50%; 
+    transform: translateX(-50%);
+    flex-wrap: wrap;
+    align-items: center;
+    top: 0px;
+}
+.x {
+    text-align: left;
+    font-family: "Inter-Bold", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    position: absolute;
+    left: 35px;
+    top: 41px;
+}
+.filtrar-por {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 138px;
+    top: 44px;
+}
+.roupas {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 138px;
+    top: 241px;
+}
+.eletronicos {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 657px;
+    top: 118px;
+}
+.casa {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 389px;
+    top: 179px;
+}
+.alimentos {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 138px;
+    top: 118px;
+}
+.cosmeticos {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 389px;
+    top: 118px;
+}
+.ofertas {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 657px;
+    top: 241px;
+}
+.limpeza {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 138px;
+    top: 179px;
+}
+.preco {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 914px;
+    top: 118px;
+}
+.pet {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 657px;
+    top: 179px;
+}
+.higiene {
+    text-align: left;
+    font-size: 30px;
+    font-weight: 400;
+    position: absolute;
+    left: 389px;
+    top: 241px;
+}
+@keyframes deslizar {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@media (max-width: 1024px) {
+    .filtro-tabela td {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .filtro-tabela td {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .filtro-tabela {
+        width: 100%;
+    }
+
+    .filtro-tabela td {
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .filtro-tabela td {
+        font-size: 14px;
+    }
+
+    .filtro-tabela {
+        width: 100%;
+    }
+
+    .filtro-tabela td {
+        display: block;
+        width: 100%;
+        padding: 8px 0;
+    }
+
+    .x {
+        font-size: 30px;
+    }
+
+    .filtrar-por {
+        font-size: 22px;
+    }
+}
